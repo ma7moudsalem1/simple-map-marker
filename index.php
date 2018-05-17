@@ -23,8 +23,10 @@
   <body>
     <div id="map"></div>
 	<br />
+  <input type="hidden" id="lat1" />
 	<input type="text" id="lat" />
 	<br />
+  <input type="hidden" id="lng1" />
 	<input type="text" id="lng" />
     <script>
 
@@ -47,6 +49,9 @@
    			var lng = marker.getPosition().lng();
    			document.getElementById("lat").value = lat;
    			document.getElementById("lng").value = lng;
+
+        document.getElementById("lat1").value = lat;
+        document.getElementById("lng1").value = lng;
   });
       }
     </script>
